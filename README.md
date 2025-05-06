@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ciclo de Desenvolvimento Utilizando Testes (TDD) 🚦
 
-## Getting Started
+Bem-vindo(a)! Este projeto é focado em ensinar e praticar testes automatizados com React, Next.js e Jest.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## O que é TDD?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+TDD significa **Test Driven Development** (Desenvolvimento Orientado a Testes).  
+É uma abordagem onde você escreve primeiro os testes, depois o código, e só então refatora.  
+O objetivo é garantir que seu código funcione corretamente desde o início e seja fácil de manter.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Como funciona o ciclo TDD?
 
-## Learn More
+O ciclo TDD segue três passos principais, conhecidos como **Red ➔ Green ➔ Refactor**:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Escreva um teste (Red):**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   - Antes de criar a funcionalidade, escreva um teste que descreva o que espera do código.
+   - O teste vai falhar, pois o código ainda não existe.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Implemente o código mínimo para passar no teste (Green):**
 
-## Deploy on Vercel
+   - Escreva o código mais simples possível para fazer o teste passar.
+   - Não se preocupe com organização ou performance agora.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Refatore o código (Refactor):**
+   - Agora que o teste está passando, melhore o código.
+   - Organize, remova duplicações, torne o código mais limpo.
+   - Os testes devem continuar passando após a refatoração.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Repita esse ciclo para cada nova funcionalidade!
+
+---
+
+## Por que usar TDD?
+
+- **Menos bugs:** Você pensa nos requisitos antes de programar.
+- **Mais confiança:** Mudanças futuras são mais seguras, pois os testes avisam se algo quebrou.
+- **Código mais limpo:** Refatorar fica mais fácil e seguro.
+- **Documentação viva:** Os testes mostram como o código deve funcionar.
+
+---
+
+## Dicas para quem está começando
+
+- Comece com testes simples e funcionalidades pequenas.
+- Use nomes claros nos testes, explicando o comportamento esperado.
+- Não tenha medo de errar: TDD é prática!
+
+---
+
+## 📚 Documentação e Guias
+
+- [Guia de Primeiros Passos para Testes Automatizados](docs/PrimeirosPassos.md)
+- [Erros comuns e soluções em componentes](docs/errors/ComponentsErrorsResolvidos.md)
+
+Explore os arquivos acima para aprender desde o básico até a resolução de problemas comuns!
+
+---
+
+**TDD é como construir uma ponte com redes de proteção: você pode avançar com segurança, sabendo que será avisado se algo der errado!**
