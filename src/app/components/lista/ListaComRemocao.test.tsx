@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react"; // render: monta o componente na memória; screen: busca elementos na tela simulada; fireEvent: simula ações do usuário
 import "@testing-library/jest-dom";
 import ListaComRemocao from "./ListaComRemocao";
 
@@ -24,3 +24,17 @@ describe("ListaComRemocao", () => {
         expect(onRemoverMock).toHaveBeenCalledWith(1);
     });
 });
+
+/*
+Explicação das funções utilizadas:
+- render: monta o componente na memória, simulando a tela do navegador.
+- screen.getByText: busca um elemento pelo texto exato.
+- screen.getByLabelText: busca um elemento pelo texto do label ou atributo aria-label.
+- fireEvent.click: simula o evento de clique do usuário em um botão.
+- expect(...).toBeInTheDocument(): verifica se o elemento está presente na tela.
+- expect(...).toHaveBeenCalledWith(...): verifica se a função foi chamada com o valor esperado.
+
+Esses testes garantem que:
+- Todos os itens aparecem na lista.
+- Ao clicar em "Remover", a função de remoção é chamada com o índice correto do item.
+*/
