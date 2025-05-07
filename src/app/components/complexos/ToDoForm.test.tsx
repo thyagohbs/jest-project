@@ -48,3 +48,22 @@ describe("ToDoForm", () => {
         expect(onAdicionarMock).not.toHaveBeenCalled(); // Não deve chamar a função
     });
 });
+
+/*
+Explicação das funções utilizadas:
+- render: monta o componente na memória, simulando a tela do navegador.
+- screen.getByPlaceholderText: busca um elemento pelo texto do placeholder.
+- screen.getByText: busca um elemento pelo texto exato.
+- fireEvent.change: simula o evento de digitação no input.
+- fireEvent.click: simula o evento de clique do usuário em um botão.
+- expect(...).toBeInTheDocument(): verifica se o elemento está presente na tela.
+- expect(...).toHaveBeenCalledWith(...): verifica se a função foi chamada com o valor esperado.
+- expect(...).toHaveValue(...): verifica o valor atual do input.
+- expect(...).not.toHaveBeenCalled(): verifica se a função não foi chamada.
+
+Esses testes garantem que:
+- O campo de texto e o botão aparecem na tela.
+- A função de adicionar é chamada corretamente.
+- O campo é limpo após adicionar.
+- Não é possível adicionar tarefa vazia.
+*/
