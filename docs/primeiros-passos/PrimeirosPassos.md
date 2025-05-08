@@ -103,6 +103,8 @@ describe("MeuBotao", () => {
 - Use as funções básicas (`describe`, `it`, `render`, `screen`, `fireEvent`) para começar.
 - Pratique bastante! Com o tempo, escrever testes vai ficar natural.
 
-Se tiver dúvidas, pergunte! Testar é um passo importante para se tornar um(a) desenvolvedor(a) completo(a).
+## Próximos passos
+
+Para aprender mais sobre testes unitários e como implementá-los em seus projetos, confira nosso [Guia de Testes Unitários](./TestesUnitarios.md).
 
 ---
